@@ -1,8 +1,8 @@
 const descriptionTitle = "Description";
-const description = readFile("texts/description");
+const description = _readFile("texts/description");
 
 const historyTitle = "History";
-const history = readFile("texts/history");
+const history = _readFile("texts/history");
 
 const images = [
   "game_1",
@@ -32,21 +32,21 @@ const features = [
 ];
 
 function displayContent() {
-  displayDescription();
-  displayHistory();
-  displayImagesForGallery();
-  displayFeatures();
+  _displayDescription();
+  _displayHistory();
+  _displayImagesForGallery();
+  _displayFeatures();
 }
 
-function displayHistory() {
+function _displayHistory() {
   document.getElementById('grid_history').innerHTML = `<h2>${historyTitle}</h2><p>${history}</p>`;
 }
 
-function displayDescription() {
+function _displayDescription() {
   document.getElementById('grid_description').innerHTML = `<h2>${descriptionTitle}</h2><p>${description}</p>`;
 }
 
-function displayImagesForGallery() {
+function _displayImagesForGallery() {
   let innerHTML = "";
   for (index in images) {
     const image = images[index];
@@ -55,7 +55,7 @@ function displayImagesForGallery() {
   document.getElementById('gallery_items').innerHTML = innerHTML;
 }
 
-function displayFeatures() {
+function _displayFeatures() {
   let innerHTML = "<ul>";
   for (index in features) {
     const feature = features[index];
@@ -65,7 +65,7 @@ function displayFeatures() {
   document.getElementById('feature-list').innerHTML = innerHTML;
 }
 
-function readFile(filePath) {
+function _readFile(filePath) {
   var result = null;
   var xmlhttp = new XMLHttpRequest();
   xmlhttp.open("GET", filePath, false);
