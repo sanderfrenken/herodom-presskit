@@ -1,30 +1,41 @@
 const descriptionTitle = "Description";
-const description = "dasdasdasdasdasdas";
+const description = readFile("texts/description");
 
 const historyTitle = "History";
-const history = "Add some storytelling here. Not the scenario of your game, but rather some backgrounds behind the creation process: why are you making this game? Most projects starts with a cool story.";
+const history = readFile("texts/history");
 
 const images = [
   "game_1",
   "game_2",
   "game_3",
   "game_4",
-  "home",
-  "lego",
   "queensday",
   "store",
+  "home",
   "creator",
   "farm",
   "overworld",
   "village",
+  "lego",
   "heroes",
   "presentation"
+];
+
+const features = [
+  "Battle in 20 different levels",
+  "Build your own characters using 350+ different assets",
+  "150+ units and enemies to explore and master",
+  "Build your own farms using 45+ different types of crops, trees and animals",
+  "25+ different dishes to cook",
+  "Endless mode for never-ending battle fun",
+  "Available in English, Spanish and Russian"
 ];
 
 function displayContent() {
   displayDescription();
   displayHistory();
   displayImagesForGallery();
+  displayFeatures();
 }
 
 function displayHistory() {
@@ -42,4 +53,22 @@ function displayImagesForGallery() {
     innerHTML += `<div class="gallery__item"><a href="images/${image}.png"><img src="images/${image}.png" alt="${image}"></a></div>`;
   }
   document.getElementById('gallery_items').innerHTML = innerHTML;
+}
+
+function displayFeatures() {
+  let innerHTML = "<ul>";
+  for (index in features) {
+    const feature = features[index];
+    innerHTML += `<li>${feature}</li>`;
+  }
+  innerHTML += "</ul>";
+  document.getElementById('feature-list').innerHTML = innerHTML;
+}
+
+function readFile(filePath) {
+  var result = null;
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", filePath, false);
+  xmlhttp.send();
+  return xmlhttp.responseText.replaceAll("\n\n", "<p>").replaceAll("\n", "<br>");
 }

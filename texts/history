@@ -1,0 +1,23 @@
+Games have always played a big role in my life, as it probably did for a lot of people like me born during or after the 80's. As a kid, I remember vividly playing GTA, SimCity, Carmageddon and what else with my big brother on the PC. One of our biggest enjoyments was Age Of Empires, 1 and 2.
+
+I am from the Netherlands and every year we celebrate the King or Queen's birthday during which a lot of people sell their stuff on street markets. In 1998, my brother and I sold everything we could during this day, and we gathered just enough money to buy AoE at the local computer shop. I think we played it for 1000's of hours, and I will never forget how we got sucked into this game, and not only had a lot of fun, but also learned interesting historical facts. At least, that is what we told our parents.
+
+Similar memories I have for Transport Tycoon, developed by my all-time hero Chris Sawyer. Thinking about Transport Tycoon, I can still hear the game music sounding in my brain. In 1997 we got the N64 for Christmas. It was a miracle playing GoldenEye64 against each other on the TV, or driving through San Francisco in Rush.
+
+In my memories, those were my golden days for digital entertainment. We even took it with us when visiting Disneyland for a long weekend, and I have the most memories not from visiting the park, but from playing 1080 snowboarding in the hotel room.
+
+I still read a lot about games, and buy them regularly. But the ones I really play are only a few, which most recently are the Resident Evil remakes and new entries. I sometimes play on mobile, especially GameDevTycoon, Kingdom Rush and Angry Birds (the first one) I found very enjoyable.
+
+During my master of Cognitive Neuropsychology at the university I started doing some programming courses for developing psychological experiments. Experiments were for example designed to measure response times of subjects needed to detect a particular visual stimulus on the screen. Though very basic, it was here I realized that computer games are in essence built around these same core principles (rendering, detecting input, state management).
+
+This intrigued me so much that I decided to learn more about game development. ActionScript 3.0 Game Programming University was one of the first books I bought, and I couldn't put it away. A lot of other books followed, and after a while I decided to focus my efforts on iOS.
+
+Starting with tutorials on Objective-C, I quickly figured this was a different level than developing Flash games in AS3.0. Nonetheless, after a while I got the hang of it, and started my first project:
+
+A language quiz aimed to learn Spanish words. It was very basic, but it did teach me how (not) to write code for a small sized project as this. Moreover, it was the first app I delivered to the Apple AppStore, and that was a very learning experience as well. Creating the store assets, understanding the signing process and release cycle are actual skills as well and are not that straightforward when doing it for the first time.
+
+Honestly, the success of this app was rather limited, but it gave me the confidence to start a new project: A shoot m up based on the Pink Floyd universe, called Numbed.
+
+Confident as I were, I decided to also do the art for this one, and I couldn't imagine anything other than that this would become my first success. To my pleasure, it was also at that time that Apple released SpriteKit, a 2D game engine developed by Apple. With the experience I just gained with iOS development it matched well with my capabilities. Over the course of a year I drew art, programmed the game and hoped for the best. When I got it out there in the open in 2014, I was hoping for some good sales obviously, maybe a review here or there.. And it never happened. I got one reaction on my Reddit post to promote the game, stating "This looks terribad".
+
+A couple of games followed after Numbed, and 4 years ago I decided to build Herodom. Inspired on games like AoE, Angry Birds, *Tycoon and Kingdom Rush, I created a rough skeleton that over the years grew to what Herodom has become today. Herodom is developed solely by me, Sander Frenken, over the span of about three years. It is written mainly in Swift relying on Apple's framework SpriteKit. Parts of the engine I built for Herodom are opensourced under the name MoreSpriteKit (creative naming right?).
